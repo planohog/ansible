@@ -1,0 +1,13 @@
+---
+- name: group module adduser
+  hosts: "{{ nodes }}"
+  become: true
+  vars:
+    mygroup: "{{ group_names}}"
+    myuser: "{{ group_users }}"
+  tasks:
+    - name: create group
+      user:	
+        name: "{{ myuser }}"
+        groups: "{{ mygroup }}"
+        append: yes 

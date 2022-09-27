@@ -1,0 +1,17 @@
+---
+- name: Ansible lineinfile module example
+# Defining the remote server where Ansible lineinfile module will take effect
+# requires nodes on call 
+  hosts: "{{ nodes }}"
+#  remote_user: ubuntu   # Using Remote host as ubuntu
+  become: true
+  tasks:
+
+# (Task-1) Checking the Sudoers file if Admins are allowed to perform all operations 
+    - name: Validate the sudoers file before saving
+      ansible.builtin.lineinfile:
+         path: /etc/sudoers
+         state: present
+         regexp: '^%admin ALL='
+         line: '%admin ALL=(ALL) NOPASSWD: ALL'
+

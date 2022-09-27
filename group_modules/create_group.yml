@@ -1,0 +1,13 @@
+---
+- name: group module demo
+  hosts: "{{ nodes }}"
+  become: true
+  vars:
+    mygroup: "{{ grpname }}"
+  tasks:
+    - name: create group
+      ansible.builtin.group:
+#        name: "{{ grpname }}"
+        name: "{{ mygroup }}"
+        state: present
+

@@ -1,12 +1,12 @@
 ---
   - name: Shell Examples
-    hosts: all
+    hosts: "{{ nodes }}"
     tasks:
 
-    - name: Check Date with Shell command
+    - name: Check Date
       shell:
          "date"
       register: datecmd
       tags: datecmd
 
-    - debug: msg="{{datecmd.stdout}}"
+    - debug: msg="{{ datecmd.stdout }}"

@@ -1,6 +1,6 @@
 ---
   - name: Shell Examples
-    hosts: all
+    hosts:  "{{ nodes }}"
     tasks:
 
     - name: Fix Logrotate daily compress
@@ -9,4 +9,4 @@
       register: sedcmd
       tags: sedcmd
 
-#    - debug: msg="{{sedcmd.stdout}}"
+#    - debug: msg="{{ sedcmd.stdout }}"
