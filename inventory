@@ -1,0 +1,3 @@
+bull1 ansible_ssh_host=10.0.0.135
+bull2 ansible_ssh_host=10.0.0.253
+bull3 ansible_ssh_host=10.0.0.86
