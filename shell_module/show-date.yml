@@ -4,9 +4,9 @@
     tasks:
 
     - name: Check Date
-      shell:
+      ansible.builtin.shell:
          "date"
       register: datecmd
       tags: datecmd
 
-    - debug: msg="{{ datecmd.stdout }}"
+    - ansible.builtin.debug: msg="{{ datecmd.stdout }}"

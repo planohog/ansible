@@ -4,7 +4,7 @@
     tasks:
 
     - name: Fix Logrotate daily compress
-      shell:
+      ansible.builtin.shell:
          'sudo sed -i -e "s/weekly/daily/g" -e "s/^\tdelaycompress/\t#delaycompress/g" /etc/logrotate.d/rsyslog'
       register: sedcmd
       tags: sedcmd

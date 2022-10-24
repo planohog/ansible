@@ -1,0 +1,12 @@
+---
+- name: Delete File(s)
+  hosts: "{{ nodes }}"
+  become: true
+  vars:
+    my_file: "{{ rmfilename }}"
+  tasks:
+    - name: Remove File
+      file:
+        path: "{{ my_file }}"
+        state: absent
+

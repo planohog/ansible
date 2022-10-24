@@ -8,7 +8,7 @@
 
 # Installing the zip, tree, and curl packages which are required to work with Apache server ( TASK-2) 
     - name: Install a list of packages
-      apt:
+      ansible.builtin.apt:
         pkg:
         - zip
         - tree
@@ -16,13 +16,13 @@
 # Updating all packages to their latest version ( TASK-3) 
 
     - name: Update all packages to their latest version
-      apt:
+      ansible.builtin.apt:
         name: "*"
         state: latest
 
 # Installing the curl package to test the Apache Server ( TASK-5) 
     - name: Update repositories cache and install "curl" package
-      apt:
+      ansible.builtin.apt:
         name: curl
         update_cache: yes
 

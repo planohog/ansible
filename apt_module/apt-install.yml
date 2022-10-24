@@ -1,0 +1,11 @@
+---
+- name: Apt Install Module
+  hosts: "{{ nodes }}"
+  become: true
+  vars:
+    my_apt: "{{ aptpkg }}"
+  tasks:
+    - name: Install Apt
+      apt:
+        name: "{{ my_apt }}"
+

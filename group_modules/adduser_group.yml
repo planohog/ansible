@@ -7,7 +7,7 @@
     myuser: "{{ group_users }}"
   tasks:
     - name: create group
-      user:	
+      user:
         name: "{{ myuser }}"
         groups: "{{ mygroup }}"
         append: yes 
