@@ -1,5 +1,6 @@
 ---
 - name: Delete File(s)
+# called with  --extra-vars  "nodes=base rmfilename=testme.txt"
   hosts: "{{ nodes }}"
   become: true
   vars:
