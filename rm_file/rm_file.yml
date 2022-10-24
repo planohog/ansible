@@ -1,6 +1,6 @@
 ---
 - name: Delete File(s)
-# called with  --extra-vars  "nodes=base rmfilename=testme.txt"
+# called  ansible-playbook rm_file.yml --extra-vars "nodes=ansiblehosts rmfilename='/var/lib/dpkg/lock-frontend' "
   hosts: "{{ nodes }}"
   become: true
   vars:
