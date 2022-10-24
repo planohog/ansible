@@ -1,0 +1,275 @@
+   47  2022-08-30 17:04:06 ansible
+   49  2022-08-30 17:04:16 ansible
+   50  2022-08-30 17:04:23 history | grep ansible
+   53  2022-08-30 17:04:38 history | grep ansible
+   55  2022-08-30 17:05:16 apt-cache search ansible
+   56  2022-08-30 17:06:16 apt-get install ansible ansible-lint 
+   57  2022-09-26 10:47:26 ansible
+   58  2022-09-26 10:47:32 ansible --version
+  101  2022-09-26 11:00:38 python -m pip install --upgrade --user ansible
+  102  2022-09-26 11:15:52 ansible -i hosts all -m ping
+  103  2022-09-26 11:16:17 cd .ansible/
+  110  2022-09-26 11:16:47 sudo chown -R  tmoore:tmoore .ansible
+  111  2022-09-26 11:16:53 cd .ansible/
+  120  2022-09-26 11:17:12 ansible -i hosts all -m ping
+  124  2022-09-26 11:19:11 mkdir ansible
+  125  2022-09-26 11:19:14 cd ansible/
+  129  2022-09-26 11:20:38 ansible -i ~/ansible/hosts all -m ping
+  130  2022-09-26 11:21:44 vi ~/ansible/hosts
+  148  2022-09-26 11:30:36 ansible -i ~/ansible/hosts all -m ping
+  149  2022-09-26 11:30:59 vi ~/ansible/hosts
+  150  2022-09-26 11:31:14 ansible -i ~/ansible/hosts all -m ping
+  151  2022-09-26 11:31:31 vi ~/ansible/hosts
+  152  2022-09-26 11:31:40 ansible -i ~/ansible/hosts all -m ping
+  153  2022-09-26 11:31:57 vi ~/ansible/hosts
+  154  2022-09-26 11:32:17 ansible -i ~/ansible/hosts all -m ping
+  155  2022-09-26 11:32:30 vi ~/ansible/hosts
+  156  2022-09-26 11:32:47 ansible -i ~/ansible/hosts all -m ping
+  171  2022-09-26 11:43:12 vi ~/ansible/hosts
+  172  2022-09-26 11:43:29 ansible -i ~/ansible/hosts all -m ping
+  174  2022-09-26 11:44:13 ansible -i ~/ansible/hosts all -m ping
+  175  2022-09-26 12:35:05 ansible all -m ping -u root
+  176  2022-09-26 12:35:27 ansible -i ~/ansible/hosts all -m ping -u root
+  179  2022-09-26 12:36:15 vi ~/ansible/hosts
+  181  2022-09-26 12:36:40 vi ~/ansible/hosts
+  182  2022-09-26 12:37:05 vi ~/ansible/hosts
+  183  2022-09-26 12:37:15 vi ~/ansible/hosts
+  184  2022-09-26 12:37:34 ansible -i ~/ansible/hosts all -m ping -u root
+  185  2022-09-26 12:37:53 ansible -i ~/ansible/hosts all -m ping 
+  186  2022-09-26 12:38:39 ansible all -i ~/ansible/hosts all -m ping 
+  187  2022-09-26 12:38:44 ansible all -i ~/ansible/hosts 
+  188  2022-09-26 12:38:50 ansible all -i ~/ansible/hosts -m ping
+  189  2022-09-26 12:39:16 ansible -i ~/ansible/hosts all -m ping -u tmoore
+  209  2022-09-26 12:43:53 ansible all -i ~/ansible/hosts -m ping
+  210  2022-09-26 12:44:00 ansible all -i ~/ansible/hosts -m ping -u tmoore
+  211  2022-09-26 12:50:15  ansible -i inventory all -m ping
+  212  2022-09-26 12:50:50 cd ansible/
+  216  2022-09-26 12:52:02  ansible -i inventory all -m ping
+  217  2022-09-26 12:52:26 ansible all -i ~/ansible/hosts -m ping -u tmoore
+  218  2022-09-26 12:52:38 ansible all -i ~/ansible/inventory -m ping -u tmoore
+  225  2022-09-26 12:56:55 ansible -i ~/ansible/inventory all -m copy -a "src=~/ansible/copytohosts.txt dest=/tmp/testfile"
+  227  2022-09-26 12:58:30 ansible -i ~/ansible/inventory all -m copy -a "src=~/ansible/copytohosts.txt dest=/tmp/testfile"
+  228  2022-09-26 13:03:09 ansible -i ~/ansible/inventory all -m apt -a "name=ntpd state=present" --become
+  233  2022-09-26 13:04:21 ansible -i ~/ansible/inventory all -m apt -a "name=ntpdate state=present" --become
+  243  2022-09-26 13:11:39 #ansible-playbook -i ~/ansible/aptmy_playbook.yml 
+  244  2022-09-26 13:11:43 cd ansible/
+  247  2022-09-26 13:12:18 #ansible-playbook -i ~/ansible/apt_module/apt_playbook.yml 
+  248  2022-09-26 13:12:27 ansible-playbook -i ~/ansible/apt_module/apt_playbook.yml 
+  250  2022-09-26 13:13:06 ansible-playbook -i ~/ansible/apt_module/apt_playbook.yml 
+  251  2022-09-26 13:14:18  ls -la ansible/apt_module/
+  252  2022-09-26 13:14:27 ansible-playbook -i ~/ansible/apt_module/apt-playbook.yml 
+  253  2022-09-26 13:14:56 ansible-playbook  ~/ansible/apt_module/apt-playbook.yml 
+  254  2022-09-26 13:15:30 ansible-playbook -i ~/ansible/inventory  ~/ansible/apt_module/apt-playbook.yml 
+  255  2022-09-26 13:15:44 ls -a ./ansible/
+  256  2022-09-26 13:15:57 ansible-playbook -i ~/ansible/inventory  ~/ansible/apt_module/apt-playbook.yml 
+  257  2022-09-26 13:16:28 vi ./ansible/apt_module/apt-playbook.yml 
+  258  2022-09-26 13:18:00 ansible-playbook -i ~/ansible/inventory  ~/ansible/apt_module/apt-playbook.yml 
+  259  2022-09-26 13:18:17 vi ./ansible/apt_module/apt-playbook.yml 
+  260  2022-09-26 13:18:26 ansible-playbook -i ~/ansible/inventory  ~/ansible/apt_module/apt-playbook.yml 
+  261  2022-09-26 13:18:38 vi ./ansible/apt_module/apt-playbook.yml 
+  262  2022-09-26 13:18:58 ansible-playbook -i ~/ansible/inventory  ~/ansible/apt_module/apt-playbook.yml 
+  263  2022-09-26 13:19:27 ansible-playbook   ~/ansible/apt_module/apt-playbook.yml 
+  265  2022-09-26 13:20:00 vi ./ansible/apt_module/apt-playbook.yml 
+  266  2022-09-26 13:20:18 ansible-playbook   ~/ansible/apt_module/apt-playbook.yml 
+  267  2022-09-26 13:20:34 ansible-playbook -i ~/ansible/inventory  ~/ansible/apt_module/apt-playbook.yml 
+  270  2022-09-26 13:22:26 find . -name "*ansible.cfg*" -print
+  271  2022-09-26 13:22:43 sudo find . -name "*ansible.cfg*" -print
+  272  2022-09-26 13:25:20 vi ./ansible/apt_module/apt-playbook.yml 
+  275  2022-09-26 13:25:32 vi ./ansible/apt_module/apt-playbook.yml 
+  276  2022-09-26 13:26:00 ansible-playbook -i ~/ansible/inventory  ~/ansible/apt_module/apt-playbook.yml 
+  278  2022-09-26 14:58:54 cd ansible/
+  288  2022-09-26 15:00:49 ansible-playbook -i ~/ansible/inventory  ~/ansible/date_module/show-date.yml 
+  289  2022-09-26 15:01:05 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/show-date.yml 
+  290  2022-09-26 15:54:21 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/show-date.yml 
+  297  2022-09-26 15:59:32 cd ~/ansible/shell_module/
+  317  2022-09-26 16:09:38 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/fix-logrotate.yml 
+  319  2022-09-26 16:10:49 vi ~/ansible/shell_module/fix-logrotate.yml 
+  320  2022-09-26 16:11:49 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/fix-logrotate.yml 
+  332  2022-09-26 16:15:44 vi ~/ansible/shell_module/fix-logrotate.yml 
+  333  2022-09-26 16:16:08 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/fix-logrotate.yml 
+  334  2022-09-26 16:17:21 vi ~/ansible/shell_module/fix-logrotate.yml 
+  335  2022-09-26 16:17:39 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/fix-logrotate.yml 
+  336  2022-09-26 16:17:49 vi ~/ansible/shell_module/fix-logrotate.yml 
+  337  2022-09-26 16:18:17 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/fix-logrotate.yml 
+  338  2022-09-26 16:18:47 vi ~/ansible/shell_module/fix-logrotate.yml 
+  339  2022-09-26 16:19:00 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/fix-logrotate.yml 
+  340  2022-09-26 16:19:12 vi ~/ansible/shell_module/fix-logrotate.yml 
+  341  2022-09-26 16:19:27 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/fix-logrotate.yml 
+  342  2022-09-26 16:19:39 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/fix-logrotate.yml 
+  344  2022-09-26 16:20:37 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/fix-logrotate.yml 
+  345  2022-09-26 16:20:53 vi ~/ansible/shell_module/fix-logrotate.yml 
+  347  2022-09-26 16:21:25 vi ~/ansible/shell_module/fix-logrotate.yml 
+  348  2022-09-26 16:21:43 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/fix-logrotate.yml 
+  350  2022-09-26 16:22:02 vi ~/ansible/shell_module/fix-logrotate.yml 
+  351  2022-09-26 16:22:22 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/fix-logrotate.yml 
+  353  2022-09-26 16:23:01 vi ~/ansible/shell_module/fix-logrotate.yml 
+  354  2022-09-26 16:23:26 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/fix-logrotate.yml 
+  356  2022-09-26 16:24:02 vi ~/ansible/shell_module/fix-logrotate.yml 
+  357  2022-09-26 16:24:35 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/fix-logrotate.yml 
+  359  2022-09-26 16:24:57 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/fix-logrotate.yml 
+  360  2022-09-26 16:25:01 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/fix-logrotate.yml 
+  361  2022-09-26 16:25:05 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/fix-logrotate.yml 
+  365  2022-09-26 16:26:17 ansible-playbook -i ~/ansible/inventory  ~/ansible/shell_module/fix-logrotate.yml 
+  368  2022-09-26 16:29:52 cd ansible/
+  370  2022-09-26 16:49:24 git clone https://github.com/planohog/ansible.git
+  373  2022-09-26 16:49:55 git clone https://github.com/planohog/ansible.git .
+  375  2022-09-26 16:50:31 rsync -av ansible/ ansible2/
+  377  2022-09-26 16:50:54 rsync -av ansible/ ansible2/
+  378  2022-09-26 16:51:04 cd ansible2
+  384  2022-09-26 16:51:20 cd ansible
+  388  2022-09-26 16:51:42 du -sh ansible*
+  389  2022-09-26 16:51:46 cd ansible
+  392  2022-09-26 16:51:57 git clone https://github.com/planohog/ansible.git .
+  397  2022-09-26 16:52:17 rsync -av ansible2/ ansible/
+  398  2022-09-26 16:52:21 cd ansible
+  410  2022-09-26 16:58:09 rsync -av ./ansible tmoore@10.0.0.177:/home/tmoore/ansible/
+  412  2022-09-26 17:03:21 cd ansible
+  416  2022-09-26 17:03:42 git clone https://github.com/planohog/ansible.git .
+  417  2022-09-26 17:03:50 cd ansible
+  418  2022-09-26 17:03:52 git clone https://github.com/planohog/ansible.git .
+  421  2022-09-26 17:04:00 git clone https://github.com/planohog/ansible.git .
+  426  2022-09-26 17:04:13 cd ansible2
+  428  2022-09-26 17:04:27 rsync -av * /home/tmoore/ansible/
+  429  2022-09-26 17:04:32 cd ../ansible
+  465  2022-09-27 10:55:05 cd ansible
+  471  2022-09-27 10:56:35 git@github.com:planohog/ansible.git
+  472  2022-09-27 10:56:48 git clone it@github.com:planohog/ansible.git
+  473  2022-09-27 10:56:56 git clone git@github.com:planohog/ansible.git
+  476  2022-09-27 10:58:49 git clone git@github.com:planohog/ansible.git
+  479  2022-09-27 10:59:31 git clone git@github.com:planohog/ansible.git .
+  482  2022-09-27 10:59:43 git clone git@github.com:planohog/ansible.git .
+  484  2022-09-27 11:00:20 git clone https://github.com/planohog/ansible.git .
+  497  2022-09-27 11:08:53 cd ansible
+  504  2022-09-27 11:09:34 git clone https://github.com/planohog/ansible.git .
+  507  2022-09-27 11:09:44 git clone https://github.com/planohog/ansible.git .
+  511  2022-09-27 11:09:57 git clone https://github.com/planohog/ansible.git .
+  533  2022-09-27 11:21:57 history | grep ansible
+  534  2022-09-27 11:22:17 rsync  -av ansible2 ansible
+  535  2022-09-27 11:22:20 cd ansible
+  538  2022-09-27 11:22:39 rm -rf ansible2/
+  540  2022-09-27 11:22:55 rsync  -av ansible2/ ansible/
+  541  2022-09-27 11:22:57 cd ansible
+  546  2022-09-27 11:23:30 cd ansible/
+  549  2022-09-27 11:23:41 rm -rf ansible/
+  553  2022-09-27 11:24:21 git commit -m 'new-ansible'
+  560  2022-09-27 11:31:16 ansible-playbook --syntax-check apt-playbook.yml -i inventory
+  561  2022-09-27 11:31:48 ansible-playbook --syntax-check apt-playbook.yml -i ~/ansible/inventory
+  565  2022-09-27 11:43:04 ls -la /etc | grep ansible
+  566  2022-09-27 11:43:16 history | grep ansible
+  567  2022-09-27 11:44:03 ansible all -i ~/ansible/inventory -m ping -u tmoore
+  568  2022-09-27 11:44:19 vi ~/ansible/inventory 
+  570  2022-09-27 11:44:57 vi ~/ansible/inventory 
+  571  2022-09-27 11:45:33 ansible all -i ~/ansible/inventory -m ping -u tmoore
+  572  2022-09-27 11:45:51 ansible all -i ~/ansible/inventory -m ping -u tmoore
+  573  2022-09-27 11:45:57 ansible all -i ~/ansible/inventory -m ping -u tmoore
+  586  2022-09-27 11:48:30 ansible all -i ~/ansible/inventory -m ping -u tmoore
+  587  2022-09-27 11:49:55 sudo mkdir /etc/ansible/
+  588  2022-09-27 11:50:10 sudo vi /etc/ansible/hosts
+  592  2022-09-27 11:52:19 sudo vi /etc/ansible/hosts
+  594  2022-09-27 11:55:13 history | grep ansible | grep -v play
+  595  2022-09-27 11:55:38 ansible all -m ping 
+  596  2022-09-27 11:56:07 ansible all -m ping 
+  597  2022-09-27 11:56:12 ansible all -m ping 
+  598  2022-09-27 11:56:31 sudo vi /etc/ansible/hosts
+  599  2022-09-27 11:56:48 ansible all -m ping 
+  600  2022-09-27 11:56:52 ansible all -m ping 
+  601  2022-09-27 11:57:13 ansible bullone -m ping 
+  602  2022-09-27 11:57:25 sudo vi /etc/ansible/hosts
+  603  2022-09-27 11:58:10 ansible bullone -m ping 
+  604  2022-09-27 11:58:16 ansible bulltwo -m ping 
+  605  2022-09-27 11:58:24 ansible bullthree -m ping 
+  606  2022-09-27 11:58:35 ansible bullthree,bulltwo -m ping 
+  607  2022-09-27 11:58:44 ansible bullthree,bulltwo,bullone -m ping 
+  608  2022-09-27 11:58:57 ansible bull* -m ping 
+  609  2022-09-27 11:59:32  ansible inventory
+  610  2022-09-27 12:00:06  ansible-inventory
+  611  2022-09-27 12:00:37  ansible-inventory --list
+  615  2022-09-27 12:45:27 cd ansible
+  622  2022-09-27 12:48:52 ansible-playbook show-date.yml --extra-vars  "nodes=bullone"
+  623  2022-09-27 12:49:20 ansible-playbook show-date.yml --extra-vars  "nodes=bullone,bulltwo"
+  624  2022-09-27 12:49:35 ansible-playbook show-date.yml --extra-vars  "nodes=all"
+  625  2022-09-27 12:50:08 ansible-playbook show-date.yml --extra-vars  "nodes=*.testme.com"
+  628  2022-09-27 12:51:36 ansible-lint -p show-date.yml 
+  630  2022-09-27 12:52:26 ansible-lint -p show-date.yml 
+  632  2022-09-27 12:53:36 ansible-lint -p show-date.yml 
+  635  2022-09-27 12:54:16 ansible-lint -p fix-logrotate.yml 
+  637  2022-09-27 12:54:44 ansible-lint -p fix-logrotate.yml 
+  642  2022-09-27 12:55:05 ansible-lint -p apt-playbook.yml 
+  645  2022-09-27 12:55:56 ansible-lint -p apt-playbook.yml 
+  656  2022-09-27 13:14:38 ansible-lint -p sudoers.yml 
+  658  2022-09-27 13:15:50 ansible-playbook sudoers.yml --extra-vars  "nodes=base"
+  669  2022-09-27 13:25:50 #ansible-playbook sudoers.yml --extra-vars  "nodes=base groupname=admin"
+  671  2022-09-27 13:26:13 #ansible-playbook sudoers.yml --extra-vars  "nodes=base grpname=admin"
+  672  2022-09-27 13:26:34 ansible-playbook create_group.yml --extra-vars  "nodes=base groupname=admin"
+  674  2022-09-27 13:28:31 ansible-playbook create_group.yml --extra-vars  "nodes=base mygroup=admin"
+  676  2022-09-27 13:29:04 ansible-playbook create_group.yml --extra-vars  "nodes=base mygroup=admin"
+  683  2022-09-27 13:35:50 ansible-playbook adduser_group.yml --extra-vars  "nodes=base user_name=tmoore group_names=admin"
+  688  2022-09-27 13:37:52 ansible-playbook adduser_group.yml --extra-vars  "nodes=base user_name=tmoore group_names=admin"
+  690  2022-09-27 13:38:28 ansible-playbook adduser_group.yml --extra-vars  "nodes=base user_name=tmoore group_names=admin"
+  693  2022-09-27 13:43:18 ansible-playbook adduser_group.yml --extra-vars  "nodes=base user_name=tmoore group_name=admin"
+  695  2022-09-27 13:44:17 ansible-playbook adduser_group.yml --extra-vars  "nodes=base user_name=tmoore group_name=admin"
+  699  2022-09-27 13:45:00 ansible-playbook adduser_group.yml --extra-vars  "nodes=base user_name=tmoore group_name=admin"
+  702  2022-09-27 13:45:38 ansible-playbook adduser_group.yml --extra-vars  "nodes=base user_name=tmoore group_name=admin"
+  706  2022-09-27 13:46:17 ansible-playbook adduser_group.yml --extra-vars  "nodes=base user_name=tmoore group_name=admin"
+  708  2022-09-27 13:47:20 ansible-playbook adduser_group.yml --extra-vars  "nodes=base user_names=tmoore group_names=admin"
+  710  2022-09-27 13:47:48 ansible-playbook adduser_group.yml --extra-vars  "nodes=base user_names=tmoore group_names=admin"
+  712  2022-09-27 13:48:20 ansible-playbook adduser_group.yml --extra-vars  "nodes=base user_names=tmoore group_names=admin"
+  714  2022-09-27 13:49:06 ansible-playbook adduser_group.yml --extra-vars  "nodes=base user_names=tmoore group_names=admin"
+  716  2022-09-27 13:49:23 ansible-playbook adduser_group.yml --extra-vars  "nodes=base user_names=tmoore group_names=admin"
+  727  2022-09-27 13:56:05 ansible-playbook adduser_group.yml --extra-vars  "nodes=base user_names=tmoore group_names=admin"
+  729  2022-09-27 13:56:46 ansible-playbook adduser_group.yml --extra-vars  "nodes=base group_users=tmoore group_names=admin"
+  737  2022-09-27 13:58:24 ansible-playbook sudoers.yml --extra-vars  "nodes=base"
+  748  2022-09-27 14:02:33 cd ansible
+  791  2022-09-30 10:17:06 cd ansible
+  795  2022-09-30 10:19:05 vi /home/tmoore/ansible/group_modules/adduser_group.yml
+  797  2022-09-30 10:24:09 cd ansible
+  828  2022-09-30 10:37:08 ansible-playbook sudoers.yml --extra-vars  "nodes=base"
+  841  2022-09-30 10:40:55 ansible-lint -p apt-playbook.yml
+  842  2022-09-30 10:41:30 ansible-playbook  apt-playbook.yml 
+  858  2022-09-30 11:00:09 #ansible-playbook rm_file.yml --extra-vars "nodes=base rmfilename=
+  860  2022-09-30 11:01:05 #ansible-playbook rm_file.yml --extra-vars "nodes=base rmfilename='/var/lib/dpkg/lock-frontend' "
+  861  2022-09-30 11:01:16 ansible-playbook rm_file.yml --extra-vars "nodes=base rmfilename='/var/lib/dpkg/lock-frontend' "
+  866  2022-09-30 11:03:04 cat /etc/ansible/hosts 
+  867  2022-09-30 11:03:26 ansible-playbook rm_file.yml --extra-vars "nodes=ansiblehosts rmfilename='/var/lib/dpkg/lock-frontend' "
+  868  2022-09-30 11:05:54 cat /etc/ansible/hosts 
+  872  2022-09-30 11:08:15 ansible-playbook rm_file.yml --extra-vars "nodes=ansiblehosts rmfilename='/var/lib/dpkg/lock-frontend' "
+  883  2022-09-30 11:15:12 ansible-playbook  apt-playbook.yml 
+  904  2022-09-30 11:22:53 ansible-playbook show-date.yml 
+  907  2022-09-30 11:23:45 ansible-playbook show-date.yml --extra-vars  "nodes=bullone"
+  908  2022-09-30 11:24:04 ansible-playbook show-date.yml --extra-vars  "nodes=ansiblehosts"
+  938  2022-09-30 11:38:36 ansible-playbook apt-install.yml --extra-vars "nodes=base"
+  939  2022-09-30 11:39:02 ansible-playbook apt-install.yml --extra-vars "nodes=base aptpkg=ntpdate"
+  940  2022-09-30 11:39:31 ansible-playbook apt-install.yml --extra-vars "nodes=ansiblehosts aptpkg=ntpdate"
+  942  2022-09-30 11:40:39 ansible-playbook apt-install.yml --extra-vars "nodes=ansiblehosts aptpkg=htop"
+  943  2022-09-30 11:41:30 ansible-playbook apt-install.yml --extra-vars "nodes=bull3 aptpkg=htop"
+  944  2022-09-30 11:41:44 ansible-playbook apt-install.yml --extra-vars "nodes=bull2 aptpkg=htop"
+  945  2022-09-30 11:41:54 ansible-playbook apt-install.yml --extra-vars "nodes=bull1 aptpkg=htop"
+  946  2022-09-30 11:42:03 ansible-playbook apt-install.yml --extra-vars "nodes=ansiblehosts aptpkg=htop"
+  954  2022-09-30 11:50:54 ansible-playbook apt-install.yml --extra-vars "nodes=ansiblehosts aptpkg=rsync"
+  959  2022-10-24 09:17:50 cd ansible
+  965  2022-10-24 09:19:26 history | grep ansible
+  966  2022-10-24 09:19:49 cat /etc/ansible/hosts 
+  968  2022-10-24 09:20:54 history | grep ansible
+  969  2022-10-24 09:21:23   ansible-playbook show-date.yml --extra-vars  "nodes=bullone"
+  976  2022-10-24 09:22:25   ansible-playbook ./shell_module/show-date.yml --extra-vars  "nodes=bullone"
+  980  2022-10-24 09:22:54 cd ansible
+  984  2022-10-24 09:23:39 git commit -m "ansible code snippets oct22"
+  991  2022-10-24 09:25:00 cd ansible
+ 1001  2022-10-24 09:29:22 git push https://github.com/planohog/ansible.git
+ 1007  2022-10-24 09:30:49 git push https://github.com/planohog/ansible.git
+ 1019  2022-10-24 09:39:49 cd ansible
+ 1022  2022-10-24 09:41:16 git remote set-url origin git@github.com:planohog/ansible.git
+ 1029  2022-10-24 09:43:09 tar cfz ansible.tgz ./ansible
+ 1030  2022-10-24 09:43:13 cd ansible
+ 1047  2022-10-24 09:46:11 cp ansible.tgz ./tmp
+ 1049  2022-10-24 09:46:18 tar xfz ansible.tgz 
+ 1051  2022-10-24 09:46:21 cd ansible/
+ 1053  2022-10-24 09:46:46 rsync -av apt_module/ /home/tmoore/ansible/apt_module/
+ 1054  2022-10-24 09:47:22 rsync -av group_modules/ /home/tmoore/ansible/group_modules/
+ 1056  2022-10-24 09:48:21 rsync -av lineinfile_module/ /home/tmoore/ansible/lineinfile_module/
+ 1057  2022-10-24 09:48:47 rsync -av rm_file/ /home/tmoore/ansible/rm_file/
+ 1058  2022-10-24 09:49:14 rsync -av shell_module/ /home/tmoore/ansible/shell_module/
+ 1061  2022-10-24 09:49:43 history | grep ansible
+ 1062  2022-10-24 09:49:58 history | grep ansible >> ansible_history.txt
+ 1068  2022-10-24 09:50:11 cd ansible
+ 1069  2022-10-24 09:50:15 history | grep ansible >> ansible_history.txt
